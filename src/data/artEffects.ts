@@ -1,0 +1,15 @@
+export const artEffectsData = [
+    { title: "WebGL Fluid Simulation", codepen_url: "https://codepen.io/soulwire/pen/DdGRYG" },
+    { title: "Canvas Particle Waves", codepen_url: "https://codepen.io/jkiss/pen/OVEeqK" },
+    { title: "Bokeh Effect", codepen_url: "https://codepen.io/noeldelgado/pen/PZJGLx" },
+    { title: "Generative Art - Dots", codepen_url: "https://codepen.io/tholman/pen/DqBJVq" },
+    { title: "Particle Sphere", codepen_url: "https://codepen.io/isuttell/pen/raxRaJ" },
+    { title: "Lion Animation Canvas", codepen_url: "https://codepen.io/Yakudoo/pen/BNNGBq" },
+    { title: "Generative Art - Circles", codepen_url: "https://codepen.io/tholman/pen/nqBvVo" },
+    { title: "Canvas Rain Effect", codepen_url: "https://codepen.io/MarcMalignan/pen/OJQZdY" },
+    { title: "Animated CSS Typography", codepen_url: "https://codepen.io/katydecorah/pen/nYLbEN" },
+    { title: "Anime.js Demo", codepen_url: "https://codepen.io/juliangarnier/pen/krNqZO" },
+    { title: "Particle Vortex", codepen_url: "https://codepen.io/crazorus/pen/DEMxPb" },
+    { title: "Animated Opening Type", codepen_url: "https://tympanus.net/Tutorials/AnimatedOpeningType/" },
+    { title: "SVG Filter Effects", codepen_url: "https://codepen.io/axelaredz/pen/neGOBe" },
+];
