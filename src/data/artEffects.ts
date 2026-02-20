@@ -31,4 +31,8 @@ export const artEffectsData = [
     { title: "Generative Landscape Shader", codepen_url: "https://codepen.io/jkantner/pen/MWzqMrp" },
     { title: "Glitch Text Effect", codepen_url: "https://codepen.io/codyhouse/pen/BaqGeX" },
     { title: "Flowing Lines Background", codepen_url: "https://codepen.io/isladjan/pen/BaaNKqj" },
+    { title: "Neon Circuit Lines", codepen_url: "https://codepen.io/KACTOPKA/pen/qBMeKeQ" },
+    { title: "Lava Lamp Blobs", codepen_url: "https://codepen.io/nathantaylor/pen/wrBQWd" },
+    { title: "Geometric Kaleidoscope", codepen_url: "https://codepen.io/nathantaylor/pen/XMXQrK" },
+    { title: "Procedural Terrain", codepen_url: "https://codepen.io/nathantaylor/pen/NXpmvY" },
 ];

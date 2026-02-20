@@ -7,4 +7,6 @@ export const transitionEffectsData = [
     { title: "Scroll-triggered Animation", codepen_url: "https://codepen.io/Coding_Journey/pen/QWdQraQ" },
     { title: "Curtain Reveal Transition", codepen_url: "https://codepen.io/solygambas/pen/RwoMLYW" },
     { title: "3D Card Flip Transition", codepen_url: "https://codepen.io/abelcabezaroman/pen/oVEJLw" },
+    { title: "Shatter Page Transition", codepen_url: "https://codepen.io/nathantaylor/pen/JEXgpj" },
+    { title: "Ink Spread Transition", codepen_url: "https://codepen.io/nathantaylor/pen/rvMaKY" },
 ];
