@@ -42,6 +42,7 @@ const CATEGORIES: { id: Category; label: string }[] = [
     { id: 'chart-effects', label: 'Charts' },
     { id: 'transition-effects', label: 'Transitions' },
     { id: 'switch-effects', label: 'Switches' },
+    { id: 'gallery', label: 'Gallery' },
 ];
 
 function App() {
@@ -83,6 +84,7 @@ function App() {
             case 'chart-effects': return chartEffectsData;
             case 'transition-effects': return transitionEffectsData;
             case 'switch-effects': return switchEffectsData;
+            case 'gallery': return galleryData;
             case 'favorites': return allItems.filter(item => favorites.includes(item.codepen_url));
             default: return loadersData;
         }
