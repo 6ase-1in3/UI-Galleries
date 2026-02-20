@@ -1,0 +1,15 @@
+export const galleryData = [
+    { title: "CSS Polaroid Gallery", codepen_url: "https://codepen.io/kathykato/pen/KRQOKY" },
+    { title: "CSS Masonry Image Gallery", codepen_url: "https://codepen.io/dudleystorey/pen/DvZjLz" },
+    { title: "3D Rotating Gallery", codepen_url: "https://codepen.io/sfi0zy/pen/PoGvYyy" },
+    { title: "CSS Grid Photo Gallery", codepen_url: "https://codepen.io/stefcharle/pen/Gydvbx" },
+    { title: "Lightbox Gallery Effect", codepen_url: "https://codepen.io/ImBobby/pen/DqEYQz" },
+    { title: "Infinite Scroll Gallery", codepen_url: "https://codepen.io/pleasedonotdisturb/pen/poqrZLZ" },
+    { title: "Hexagonal Grid Gallery", codepen_url: "https://codepen.io/thebabydino/pen/XJrYqGb" },
+    { title: "Hover Zoom Gallery", codepen_url: "https://codepen.io/dashbouquetdevelopment/pen/mBvQrB" },
+    { title: "CSS Only Slideshow", codepen_url: "https://codepen.io/toshiya-marukubo/pen/gOKMvPZ" },
+    { title: "Stacked Card Gallery", codepen_url: "https://codepen.io/cycosta/pen/wvMeNoJ" },
+    { title: "Fullscreen Gallery Transition", codepen_url: "https://codepen.io/bbx/pen/Jxoqdg" },
+    { title: "WebGL Image Gallery", codepen_url: "https://codepen.io/NiklasKnaack/pen/abrOMLY" },
+    { title: "Blur Reveal Gallery", codepen_url: "https://codepen.io/sreisner/pen/gwZKwd" },
+];

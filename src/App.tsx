@@ -12,6 +12,7 @@ import { navEffectsData } from './data/navEffects'
 import { chartEffectsData } from './data/chartEffects'
 import { transitionEffectsData } from './data/transitionEffects'
 import { switchEffectsData } from './data/switchEffects'
+import { galleryData } from './data/gallery'
 import useLocalStorage from './hooks/useLocalStorage'
 
 type Category =
@@ -26,6 +27,7 @@ type Category =
     | 'chart-effects'
     | 'transition-effects'
     | 'switch-effects'
+    | 'gallery'
     | 'favorites';
 
 const CATEGORIES: { id: Category; label: string }[] = [
@@ -66,7 +68,7 @@ function App() {
         const allItems = [
             ...loadersData, ...buttonsData, ...cardsData, ...menusData,
             ...uiCardsData, ...sidebarsData, ...artEffectsData, ...navEffectsData,
-            ...chartEffectsData, ...transitionEffectsData, ...switchEffectsData
+            ...chartEffectsData, ...transitionEffectsData, ...switchEffectsData, ...galleryData
         ];
 
         switch (activeCategory) {
