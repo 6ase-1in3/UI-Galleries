@@ -139,5 +139,11 @@ export const loadersData = [
     {
         "title": "Fun Little Loader",
         "codepen_url": "https://codepen.io/joshuaward/pen/XejbZv"
-    }
+    },
+    { title: "Bouncing Dots Loader", codepen_url: "https://codepen.io/jkantner/pen/eYMBNpv" },
+    { title: "Liquid Fill Gauge", codepen_url: "https://codepen.io/jkantner/pen/ZEvQbOK" },
+    { title: "Circular Progress Ring", codepen_url: "https://codepen.io/jkantner/pen/gbPjGLX" },
+    { title: "Morphing Loader Shapes", codepen_url: "https://codepen.io/jkantner/pen/WbQVMBE" },
+    { title: "Pixel Loading Bar", codepen_url: "https://codepen.io/jkantner/pen/vENmJmv" },
+    { title: "Ripple Wave Loader", codepen_url: "https://codepen.io/jkantner/pen/empZdZO" }
 ];

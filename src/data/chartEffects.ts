@@ -1,3 +1,15 @@
 export const chartEffectsData = [
     { title: "Animated 3D Bar Chart", codepen_url: "https://tympanus.net/Tutorials/Animated3DBarChart/" },
+    { title: "Explosion Chart", codepen_url: "https://codepen.io/explosion/pen/aJvyLG" },
+    { title: "Animated Line Chart", codepen_url: "https://codepen.io/gregh/pen/gEBXPK" },
+    { title: "Donut Chart Animation", codepen_url: "https://codepen.io/ettrics/pen/jERWPP" },
+    { title: "Radar Chart", codepen_url: "https://codepen.io/alex_rodrigues/pen/ogYZdr" },
+    { title: "SVG Area Chart", codepen_url: "https://codepen.io/ames/pen/xZzREM" },
+    { title: "Bubble Chart", codepen_url: "https://codepen.io/RobotsPlay/pen/kXXNJZ" },
+    { title: "Animated Pie Chart", codepen_url: "https://codepen.io/ejsado/pen/ExaNPW" },
+    { title: "CSS Bar Chart", codepen_url: "https://codepen.io/cjl750/pen/mXbMyo" },
+    { title: "Responsive Column Chart", codepen_url: "https://codepen.io/tutsplus/pen/QNeJgR" },
+    { title: "D3 Progress Bars", codepen_url: "https://codepen.io/itbruno/pen/KwarLp" },
+    { title: "Gauge Meter", codepen_url: "https://codepen.io/yourinium/pen/adMoyv" },
+    { title: "Animated Comparison Chart", codepen_url: "https://codepen.io/tutsplus/pen/ZKpNwm" },
 ];

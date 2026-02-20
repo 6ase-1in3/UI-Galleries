@@ -28,4 +28,7 @@ export const artEffectsData = [
     { title: "CSS Confetti", codepen_url: "https://codepen.io/filipz/pen/bNNYyqE" },
     { title: "Sound Waves Visualizer", codepen_url: "https://codepen.io/Supercopra/pen/zWJpRd" },
     { title: "Colorful Dots Background", codepen_url: "https://codepen.io/iamlark/pen/jYzYJg" },
+    { title: "Generative Landscape Shader", codepen_url: "https://codepen.io/jkantner/pen/MWzqMrp" },
+    { title: "Glitch Text Effect", codepen_url: "https://codepen.io/codyhouse/pen/BaqGeX" },
+    { title: "Flowing Lines Background", codepen_url: "https://codepen.io/isladjan/pen/BaaNKqj" },
 ];

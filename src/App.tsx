@@ -10,6 +10,8 @@ import { sidebarsData } from './data/sidebars'
 import { artEffectsData } from './data/artEffects'
 import { navEffectsData } from './data/navEffects'
 import { chartEffectsData } from './data/chartEffects'
+import { transitionEffectsData } from './data/transitionEffects'
+import { switchEffectsData } from './data/switchEffects'
 import useLocalStorage from './hooks/useLocalStorage'
 
 type Category =
@@ -22,6 +24,8 @@ type Category =
     | 'art-effects'
     | 'nav-effects'
     | 'chart-effects'
+    | 'transition-effects'
+    | 'switch-effects'
     | 'favorites';
 
 const CATEGORIES: { id: Category; label: string }[] = [
@@ -34,6 +38,8 @@ const CATEGORIES: { id: Category; label: string }[] = [
     { id: 'art-effects', label: 'Art Effects' },
     { id: 'nav-effects', label: 'Nav Effects' },
     { id: 'chart-effects', label: 'Charts' },
+    { id: 'transition-effects', label: 'Transitions' },
+    { id: 'switch-effects', label: 'Switches' },
 ];
 
 function App() {
@@ -59,7 +65,8 @@ function App() {
     const getCategoryData = () => {
         const allItems = [
             ...loadersData, ...buttonsData, ...cardsData, ...menusData,
-            ...uiCardsData, ...sidebarsData, ...artEffectsData, ...navEffectsData, ...chartEffectsData
+            ...uiCardsData, ...sidebarsData, ...artEffectsData, ...navEffectsData,
+            ...chartEffectsData, ...transitionEffectsData, ...switchEffectsData
         ];
 
         switch (activeCategory) {
@@ -72,6 +79,8 @@ function App() {
             case 'art-effects': return artEffectsData;
             case 'nav-effects': return navEffectsData;
             case 'chart-effects': return chartEffectsData;
+            case 'transition-effects': return transitionEffectsData;
+            case 'switch-effects': return switchEffectsData;
             case 'favorites': return allItems.filter(item => favorites.includes(item.codepen_url));
             default: return loadersData;
         }
@@ -99,8 +108,8 @@ function App() {
                                     key={id}
                                     onClick={() => setActiveCategory(id)}
                                     className={`px-3 py-1.5 text-sm font-medium rounded-md transition-all duration-200 whitespace-nowrap ${activeCategory === id
-                                            ? 'bg-white text-blue-600 shadow-sm ring-1 ring-black/5'
-                                            : 'text-gray-500 hover:text-gray-900 hover:bg-gray-200/50'
+                                        ? 'bg-white text-blue-600 shadow-sm ring-1 ring-black/5'
+                                        : 'text-gray-500 hover:text-gray-900 hover:bg-gray-200/50'
                                         }`}
                                 >
                                     {label}
@@ -111,8 +120,8 @@ function App() {
                         <button
                             onClick={() => setActiveCategory('favorites')}
                             className={`px-3 py-1.5 text-sm font-medium rounded-md transition-all duration-200 flex items-center gap-1.5 shrink-0 ${activeCategory === 'favorites'
-                                    ? 'bg-yellow-50 text-yellow-600 shadow-sm ring-1 ring-yellow-400/20'
-                                    : 'text-gray-500 hover:text-yellow-600 hover:bg-yellow-50'
+                                ? 'bg-yellow-50 text-yellow-600 shadow-sm ring-1 ring-yellow-400/20'
+                                : 'text-gray-500 hover:text-yellow-600 hover:bg-yellow-50'
                                 }`}
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill={activeCategory === 'favorites' ? "currentColor" : "none"} stroke="currentColor" className="w-4 h-4">
