@@ -12,4 +12,5 @@ export const galleryData = [
     { title: "Fullscreen Gallery Transition", codepen_url: "https://codepen.io/bbx/pen/Jxoqdg" },
     { title: "WebGL Image Gallery", codepen_url: "https://codepen.io/NiklasKnaack/pen/abrOMLY" },
     { title: "Blur Reveal Gallery", codepen_url: "https://codepen.io/sreisner/pen/gwZKwd" },
+    { title: "3D Carousel Gallery", codepen_url: "https://codepen.io/yudizsolutions/pen/RNbXKNe" },
 ];

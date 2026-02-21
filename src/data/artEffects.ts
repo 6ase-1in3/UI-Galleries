@@ -35,4 +35,6 @@ export const artEffectsData = [
     { title: "Lava Lamp Blobs", codepen_url: "https://codepen.io/nathantaylor/pen/wrBQWd" },
     { title: "Geometric Kaleidoscope", codepen_url: "https://codepen.io/nathantaylor/pen/XMXQrK" },
     { title: "Procedural Terrain", codepen_url: "https://codepen.io/nathantaylor/pen/NXpmvY" },
+    { title: "Animated SVG Fireworks", codepen_url: "https://codepen.io/yudizsolutions/pen/jOgoamN" },
+    { title: "CSS Liquid Morph", codepen_url: "https://codepen.io/yudizsolutions/pen/eYLYgBm" },
 ];
