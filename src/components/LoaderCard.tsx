@@ -10,22 +10,47 @@ interface LoaderCardProps {
     onClick: (loader: LoaderData) => void;
     isFavorite: boolean;
     onToggleFavorite: (e: React.MouseEvent, loader: LoaderData) => void;
+    isSelectionMode?: boolean;
+    isSelected?: boolean;
+    onToggleSelect?: (e: React.MouseEvent, loader: LoaderData) => void;
 }
 
-export const LoaderCard: React.FC<LoaderCardProps> = ({ loader, onClick, isFavorite, onToggleFavorite }) => {
+export const LoaderCard: React.FC<LoaderCardProps> = ({
+    loader,
+    onClick,
+    isFavorite,
+    onToggleFavorite,
+    isSelectionMode = false,
+    isSelected = false,
+    onToggleSelect
+}) => {
     const embedUrl = loader.codepen_url.replace('/pen/', '/embed/') + '?default-tab=result&theme-id=light';
 
     return (
         <div
-            className="bg-bg-card rounded-2xl border border-border-subtle shadow-card hover:shadow-hover transition-all duration-300 cursor-pointer overflow-hidden flex flex-col h-full group relative"
-            onClick={() => onClick(loader)}
+            onClick={() => isSelectionMode && onToggleSelect ? onToggleSelect({} as any, loader) : onClick(loader)}
+            className={`group relative bg-white rounded-xl border border-border-subtle overflow-hidden hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 transform hover:-translate-y-1 cursor-pointer ${isSelected ? 'ring-2 ring-blue-500 shadow-blue-500/20' : ''
+                }`}
         >
+            {/* Selection Checkbox Overlay */}
+            {isSelectionMode && (
+                <div className="absolute top-3 left-3 z-30">
+                    <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all ${isSelected
+                            ? 'bg-blue-500 border-blue-500 text-white scale-110'
+                            : 'bg-white/80 border-gray-300 text-transparent backdrop-blur-sm'
+                        }`}>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
+                            <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+            )}
             <div className="absolute top-3 right-3 z-30 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                 <button
                     onClick={(e) => onToggleFavorite(e, loader)}
                     className={`p-2 rounded-full shadow-sm backdrop-blur-md transition-all duration-200 ${isFavorite
-                            ? 'bg-yellow-100 text-yellow-500 hover:bg-yellow-200'
-                            : 'bg-white/90 text-gray-400 hover:text-yellow-500 hover:bg-white'
+                        ? 'bg-yellow-100 text-yellow-500 hover:bg-yellow-200'
+                        : 'bg-white/90 text-gray-400 hover:text-yellow-500 hover:bg-white'
                         }`}
                     title={isFavorite ? "Remove from favorites" : "Add to favorites"}
                 >
